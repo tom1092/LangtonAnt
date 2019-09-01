@@ -5,6 +5,8 @@
   </h1>
 </div>
 
-<canvas #canvas width="1200" height="600"></canvas>
-<button (click) = "animate()" >Animate</button>
+<canvas #canvas (click) = "onCanvasClick($event)" width="1200" height="600"></canvas>
+<button (click) = "animate()">Play</button>
+<button (click) = "pauseScenario()"> Pause </button>
+<button (click) = "clearScenario()"> Clear </button>
 <label >Iteration: {{iteration}}</label>
