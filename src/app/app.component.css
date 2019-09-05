@@ -8,7 +8,6 @@ div.canvasDiv{
 canvas{
   display: block;
   padding: 0;
-  /*position: absolute;*/
   margin: 0 auto;
 }
 

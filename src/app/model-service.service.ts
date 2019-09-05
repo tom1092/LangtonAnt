@@ -6,10 +6,13 @@ import { Ant } from '../ant';
   providedIn: 'root'
 })
 export class ModelServiceService {
-
+  //Questa classe rappresenta il servizio.
+  //E' il modo attraverso il quale il controller comunica con il model
+  //Espone quindi i metodi necessari al funzionamento
   private scenario: Scenario;
 
   constructor() { }
+
 
   createScenario(width: number, height: number): void{
     this.scenario = new Scenario(width, height);
