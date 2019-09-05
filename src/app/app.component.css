@@ -1,0 +1,48 @@
+
+@import url('https://fonts.googleapis.com/css?family=Montserrat&display=swap');
+
+div.canvasDiv{
+  position: relative;
+}
+
+canvas{
+  display: block;
+  padding: 0;
+  /*position: absolute;*/
+  margin: 0 auto;
+}
+
+body{
+  font-family: 'Montserrat', sans-serif;
+
+}
+h1, h6{
+
+  text-transform: uppercase;
+}
+h1{
+  margin-bottom: 8vh;
+}
+button.control{
+  padding: 0.5vw 1vw;
+  margin: 1vw;
+  border-style: solid;
+  border-radius: 0.5vw;
+}
+div.underCanvas{
+  text-align: center;
+}
+div.underCanvas label{
+  display: block;
+
+}
+
+div.underCanvas p{
+  display: inline-block;
+  margin-left: 4vw;
+
+}
+div input{
+  max-width: 20px;
+  margin-left: 1vw;
+}

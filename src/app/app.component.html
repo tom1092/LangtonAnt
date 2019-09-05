@@ -1,12 +1,27 @@
-<!--The content below is only a placeholder and can be replaced.-->
-<div style="text-align:center">
-  <h1>
-    Welcome to {{ title }}!
-  </h1>
-</div>
+<html>
+  <body>
+    <div style="text-align:center">
+      <h1>
+        Formiche di Langton!
+      </h1>
+      <h6>
+        Puoi fare click in qualsiasi momento sul canvas per aggiungere una formica in quella posizione!
+      </h6>
+      <h6>
+        Puoi fare zoom in un punto del canvas facendo scroll in quella posizione
+      </h6>
+    </div>
+      <canvas #canvas (click) = "onCanvasClick($event)" (wheel) = "onwheel($event)" width="800" height="400"></canvas>
+    <div class="underCanvas">
+      <button class ="control" (click) = "playScenario()">Play</button>
+      <button class ="control" (click) = "pauseScenario()"> Pause </button>
+      <button class ="control" (click) = "clearScenario()"> Clear </button>
+      <p> FPS: </p>
+      <input [(ngModel)] = "fps">
+      <button class="control" (click) = "updateFrameRate()"> Update frame rate</button>
+      <label>Iteration: {{iteration}}</label>
+    </div>
 
-<canvas #canvas (click) = "onCanvasClick($event)" width="1200" height="600"></canvas>
-<button (click) = "animate()">Play</button>
-<button (click) = "pauseScenario()"> Pause </button>
-<button (click) = "clearScenario()"> Clear </button>
-<label >Iteration: {{iteration}}</label>
+
+  </body>
+</html>
